@@ -6,4 +6,7 @@ Note that there should be no ending on the output file (-o).
 
 To use the admixture script, it is required to have admixture in the environment path, download from: http://software.genetics.ucla.edu/admixture/download.html and create symbolic link like above (and set the executive rights). Then use the script like this: /path/to/admixture.sh myOrganism.ped outputfolderName maxK NrThreads. First is name or path to your ped file, second is the name of the folder where it will output the results and the third is the number of threads to use and the last is the max nr of K to which to analyse.
 
-The Rscript should be opened in Rstudio (or whatever R editor you use) and be edited in accordance to your need (change file paths etc.)
+The R scripts should be opened in Rstudio (or whatever R editor you use) and be edited in accordance to your need (change file paths etc.)
+
+The R script piechartMap.R plots the average admixture ratios for each population in piecharts on a map, given coordinates. Calculate average admixture ratio for each population and put this in a .csv file with coordinates (use pieplot_K4.csv as an example of how to set it up), where CoordLat and CoordLong are the actual coordinates of the population, and plotLat and plotLong are the coordinates where you want the piechart to be plotted. The Columns: nr, group and pop are not used, they are only to aid in orientation.
+
