@@ -1,4 +1,4 @@
-#Script used to plot results of admixture (or any other structure like program that outputs Q-values or similar). plots names of populations 
+#Script used to plot results of admixture (or any other structure like program that outputs Q-values or similar). plots names of populations at the bottom of the X axis and optional names of groups at the top of the X axis.
 
 admix<-t(as.matrix(read.table("/path/to/admixtureFile"))) #file has ending .Q
 pop<-read.table("/path/to/popmap",as.is=T) #population file with name of individual in right column and name of population in left column. columns separated by tab.
