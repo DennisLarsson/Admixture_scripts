@@ -1,4 +1,7 @@
 # Admixture_scripts
+
+Version 1.0
+
 scripts to convert to ped format from vcf and quality of life script to run admixture
 
 You need a filtered vcf file to do the conversion and download plink from here: https://www.cog-genomics.org/plink2 (version 1.9 stable Linux 64-bit). Then make a symbolic link for plink to the environment path (sudo ln -s /path/to/plink /usr/local/bin , make sure that the paths are absolute and not relative!) and make sure that plink has executive rights (sudo chmod +x /path/to/plink). The conversion script is run using python3. to run it type in the terminal: python3 /path/to/convertVcf2.py -i /path/to/myOrganism.vcf -o /path/to/myOrganism
